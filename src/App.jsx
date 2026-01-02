@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import Navbar from "./components/Navbar"
 import { AppContext } from "./context/AppContext"
+import Hero from "./components/Hero"
 
 function App() {
   const { darkMode } = useContext(AppContext)
@@ -8,10 +9,14 @@ function App() {
     <div 
     style={{
       backgroundColor : darkMode ? "black" : "white",
-      color: darkMode ? "white" : "black"
+      color: darkMode ? "white" : "black",
+      height: "100vh"
     }}
-    className="mx-auto w-1/2 p-3 border-l border-r ">
+    >
+      <div className="mx-auto w-1/2 p-3">
       <Navbar />
+      <Hero />
+      </div>
     </div>
   )
 }

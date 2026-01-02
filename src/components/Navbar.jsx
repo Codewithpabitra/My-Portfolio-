@@ -4,13 +4,18 @@ import { FaRegMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import { AppContext } from '../context/AppContext';
 import { NavLink } from 'react-router-dom';
+import { motion } from "motion/react"
 
 const Navbar = () => {
 
     const { darkMode, setDarkMode } = useContext(AppContext);
 
   return (
-    <div className='flex justify-between items-center'>
+    <motion.div 
+    initial={{opacity: 0, y: -5}}
+    animate={{opacity: 1, y: 0}}
+    transition={{duration: 0.8}}
+    className='flex justify-between items-center'>
       <NavLink to="/" >
         <div className="logo text-xl font-semibold ">Pabitra<span className='text-blue-500 '>.</span></div> 
       </NavLink>
@@ -23,14 +28,14 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="buttons flex justify-between items-center gap-5 ">
-        <div className="mode" onClick={() => setDarkMode(!darkMode)}>
+        <div className="mode cursor-pointer" onClick={() => setDarkMode(!darkMode)}>
            {darkMode ? <FaRegMoon /> : <IoIosSunny />}
         </div>
-        <div className="github">
+        <div className="github cursor-pointer">
             <FaGithub />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

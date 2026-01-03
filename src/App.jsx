@@ -13,7 +13,7 @@ function App() {
       height: "100vh"
     }}
     >
-      <div className="mx-auto w-1/2 p-3">
+      <div className={`mx-auto w-[75%] py-5 border-r border-l ${!darkMode ? 'border-r-zinc-300 border-l-zinc-300' : 'border-r-zinc-800 border-l-zinc-800'} `}>
       <Navbar />
       <Hero />
       </div>

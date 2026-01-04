@@ -17,7 +17,7 @@ const Journey = () => {
     ]
   return (
     <div className='mt-15 '>
-      <h2 className='text-4xl text-center '>My <span className='p-1 border border-zinc-800 rounded-xl cursor-pointer inline-block rotate-2 hover:rotate-5 bg-linear-to-r from-pink-100 via-white to-pink-100 text-black'>Professional</span> Journey</h2>
+      <h2 className='text-4xl text-center '>My <span className='p-1 border border-zinc-800 rounded-xl cursor-pointer inline-block -rotate-2 hover:rotate-3 bg-linear-to-r transition-all duration-200 from-pink-100 via-white to-pink-100 text-black'>Professional</span> Journey</h2>
       <div className='main-journey m-10 flex justify-between items-center gap-5  '>
         {journeyDetails.map((item , index) => (
             <div key={index} className={`p-5 border ${!darkMode ? 'border-zinc-300' : "border-zinc-800"} rounded-xl flex flex-col gap-3 shadow-lg hover:scale-103 transition-all duration-300 `}>

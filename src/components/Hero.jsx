@@ -55,8 +55,9 @@ const Hero = () => {
         animate={{opacity: 1, y: 0}}
         transition={{duration: 1}}
       className='flex items-center justify-start gap-3 '>
+        <a href="mailto:pabitra05.maity@gmail.com">
         <button className={`font-semibold px-5 py-2 border text-sm border-zinc-500 rounded-full cursor-pointer ${!darkMode ? 'hover:bg-black hover:text-white' : 'hover:bg-white hover:text-black'} transition-all duration-300`}
-        >Let's Work Together</button>
+        >Let's Work Together</button></a>
         <button className='font-semibold px-5 py-2  text-sm bg-blue-500 rounded-full flex justify-center items-center gap-1 cursor-pointer text-white hover:scale-103 transition-all duration-300 shadow-[0_0_25px_rgba(59,130,246,0.8)]'>Resume <MdDownload/></button>
       </motion.div>
 

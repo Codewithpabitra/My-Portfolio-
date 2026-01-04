@@ -8,3 +8,7 @@
 .span-text {
    font-family: "Dancing Script", cursive;
 }
+
+.custom-font {
+    font-family: sans-serif;
+}

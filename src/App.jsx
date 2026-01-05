@@ -4,6 +4,7 @@ import { AppContext } from "./context/AppContext"
 import Hero from "./components/Hero"
 import Journey from "./components/Journey"
 import Projects from "./components/Projects"
+import TechStacks from "./components/TechStacks"
 
 function App() {
   const { darkMode } = useContext(AppContext)
@@ -21,6 +22,7 @@ function App() {
       <Hero />
       <Journey />
       <Projects />
+      <TechStacks />
       </div>
     </div>
   )

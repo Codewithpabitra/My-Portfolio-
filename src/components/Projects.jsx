@@ -42,7 +42,7 @@ const Projects = () => {
     ]
   return (
     <div className='mt-10 '>
-        <h2 className='text-4xl text-center'>A Glimpse of <span className='p-1 border border-zinc-800 rounded-xl cursor-pointer inline-block -rotate-2 hover:rotate-3 bg-linear-to-r transition-all duration-200 from-pink-100 via-white to-pink-100 text-black'>🥂My Crafts</span></h2>
+        <h2 className='text-4xl text-center'>A Glimpse of <span className='p-1 border border-zinc-800 rounded-xl cursor-pointer inline-block -rotate-2 hover:rotate-3 bg-linear-to-r transition-all duration-200 from-pink-100 via-white to-pink-100 text-black'>🎊My Crafts</span></h2>
 
         <div className='flex flex-wrap justify-start items-center gap-3 p-10  '>
             {projectsDetails.map((item, index) => (
